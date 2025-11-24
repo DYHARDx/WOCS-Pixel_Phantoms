@@ -45,7 +45,7 @@ function renderFooter(basePath = '') {
                         <li><a href="${basePath}contact.html">Contact</a></li>
                         <li><a href="#">Help Center</a></li>
                         <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="${basePath}pages/terms.html">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>
