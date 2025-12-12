@@ -156,8 +156,16 @@ body.mobile-menu-open {
 }
 
 /* MAIN CONTENT WRAPPER */
-.main-content {
+.main-content,
+main {
     flex: 1;
+    padding-top: 80px; /* Account for fixed navbar */
+    min-height: calc(100vh - 80px);
+}
+
+/* Specific adjustment for main element on index page */
+main#main-content {
+    padding-top: 80px;
 }
 
 /* NAVBAR - UPDATED WITH CURVED DESIGN AND ANIMATIONS */

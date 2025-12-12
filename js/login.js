@@ -379,32 +379,8 @@ document.addEventListener('DOMContentLoaded', () => {
         updateHackerStats();
     }
     
-    function selectAndAnimateMessage() {
-        const dynamicMsgElement = document.getElementById('dynamic-login-message');
-        const welcomeMessages = [
-            "> SYSTEM_ACCESS_POINT",
-            "> SYNCHRONIZING_ACCESS_KEYS",
-            "> INITIATE_AGENT_HANDSHAKE"
-        ];
-        const targetText = welcomeMessages[Math.floor(Math.random() * welcomeMessages.length)];
-        
-        dynamicMsgElement.style.animation = 'none';
-
-        let textIndex = 0;
-        dynamicMsgElement.textContent = ''; 
-
-        const typewriter = () => {
-            if (textIndex < targetText.length) {
-                dynamicMsgElement.textContent += targetText.charAt(textIndex);
-                textIndex++;
-                setTimeout(typewriter, 75 + Math.random() * 50);
-            }
-        };
-
-        typewriter();
-    }
+    // selectAndAnimateMessage function removed - hero section not displayed
     
-    selectAndAnimateMessage();
     initMatrixRain();
     initHackerStats(); 
     setAuthMode('login'); 
