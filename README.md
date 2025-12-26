@@ -75,8 +75,10 @@ You can:
 The website will open in your default browser at `http://127.0.0.1:5500/` (or similar local server address).
 
 ---
+<details>
 
-# 📁 Project Structure
+<summary><h1>📁 Project Structure</h1></summary>
+
 
 ```
 pixel-phantoms-website/
@@ -144,6 +146,7 @@ pixel-phantoms-website/
     ├── projects.html
     └── terms.html
 ```
+</details>
 
 ---
 
