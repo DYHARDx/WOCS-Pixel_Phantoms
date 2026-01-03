@@ -263,7 +263,7 @@ main {
     position: absolute;
     bottom: 0; left: 0; right: 0;
     /* UPDATED: Uses card-bg with transparency for readability */
-    background: linear-gradient(to top, var(--card-bg) 20%, rgba(0,0,0,0) 80%, transparent 100%); 
+    background: linear-gradient(to top, var(--card-bg) 20%, rgba(205, 16, 16, 0) 80%, transparent 100%); 
     padding: 40px;
     display: flex;
     flex-direction: column;
@@ -301,7 +301,7 @@ main {
 }
 
 .btn-hollow {
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     border: 1px solid var(--text-primary); /* UPDATED */
     color: var(--text-primary); /* UPDATED */
     padding: 10px 25px;
