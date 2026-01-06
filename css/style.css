@@ -1027,9 +1027,16 @@ body.mobile-menu-open {
   transform: scale(1.05);
 }
 
-/* =========================================
-     8. LEADERBOARD PREVIEW (ENHANCED) - TOUCH FIXED
-     ========================================= */
+/* Reminder button active state */
+.btn-sm.reminder-active {
+    background-color: #00ff88;
+    color: #000;
+    cursor: default;
+}
+
+/* ================================
+   8. LEADERBOARD PREVIEW 
+   ================================ */
 .leaderboard-preview {
   padding: 100px 0;
   background: var(--bg-primary);
