@@ -1,3 +1,6 @@
+// File: js/footer.js
+// Renders the footer and wires newsletter feedback
+
 function renderFooter(basePath = '') {
   const placeholder = document.getElementById('footer-placeholder');
 

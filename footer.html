@@ -8,16 +8,16 @@
 
   <div class="footer-container">
     <div class="footer-content">
+      <!-- Brand -->
       <div class="footer-brand">
         <div class="footer-logo glitch-hover">
-          <img src="assets/logo.png" alt="Pixel Phantoms Logo" />
+          <img src="assets/logo.png" alt="Pixel Phantoms Logo" loading="lazy" />
           <span class="brand-name neon-text">Pixel Phantoms</span>
         </div>
 
         <p class="footer-description">
-          A community of passionate developers,<br />
-          designers, and creators building amazing<br />
-          digital experiences.
+          A community of passionate developers, designers, and creators building meaningful digital
+          experiences together.
         </p>
 
         <div class="social-links dynamic-signals">
@@ -31,11 +31,50 @@
             <i class="fab fa-discord"></i>
           </a>
           <a href="https://www.linkedin.com/company/pixel-phantoms/" class="social-link" target="_blank" rel="noopener">
+        <div class="social-links dynamic-signals" aria-label="Social media links">
+          <a
+            href="https://github.com/sayeeg-11/Pixel_Phantoms"
+            class="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://www.instagram.com/pixelphantoms_"
+            class="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <a
+            href="https://discord.com/"
+            class="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Discord"
+          >
+            <i class="fab fa-discord"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/company/pixel-phantoms/"
+            class="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
             <i class="fab fa-linkedin"></i>
           </a>
         </div>
       </div>
 
+      <!-- Links -->
       <div class="footer-links-grid">
         <div class="link-group">
           <h3 class="link-group-title">Explore</h3>
@@ -68,12 +107,20 @@
         </div>
       </div>
 
+      <!-- Newsletter -->
       <div class="footer-newsletter">
         <h3 class="newsletter-title">Stay Updated</h3>
         <p class="newsletter-description">
           Subscribe to our newsletter for the latest updates.
         </p>
         <form class="newsletter-form">
+        <h3 class="newsletter-title">Stay in the Loop</h3>
+        <p class="newsletter-description">
+          Get updates about events, projects, and community news.
+        </p>
+
+        <!-- Keep no-loading so scripts.js doesn't hijack this submit handler -->
+        <form class="newsletter-form no-loading" aria-label="Newsletter subscription">
           <div class="input-group">
             <input
               type="email"
@@ -84,11 +131,24 @@
             <button type="submit" class="newsletter-btn">
               <i class="fas fa-paper-plane"></i>
             </button>
+              placeholder="you@example.com"
+              aria-label="Email address"
+              required
+            />
+            <button type="submit" class="newsletter-btn" aria-label="Subscribe">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+
+          <!-- Added feedback area -->
+          <div class="newsletter-feedback">
+            <p class="feedback-message"></p>
           </div>
         </form>
       </div>
     </div>
 
+    <!-- Bottom -->
     <div class="footer-bottom">
       <div class="footer-bottom-content">
         © <span id="currentYear"></span> Pixel Phantoms. All rights reserved.
@@ -96,8 +156,17 @@
         <div class="footer-bottom-links">
           <a href="pages/privacy.html" class="bottom-link">Privacy</a> |
           <a href="pages/terms.html" class="bottom-link">Terms</a> |
+        <p class="copyright">
+          © <span id="current-year">2025</span> Pixel Phantoms. All rights reserved.
+        </p>
+
+        <nav class="footer-bottom-links" aria-label="Footer legal links">
+          <a href="pages/privacy.html" class="bottom-link">Privacy</a>
+          <span aria-hidden="true">|</span>
+          <a href="pages/terms.html" class="bottom-link">Terms</a>
+          <span aria-hidden="true">|</span>
           <a href="#" class="bottom-link">Sitemap</a>
-        </div>
+        </nav>
       </div>
     </div>
   </div>
