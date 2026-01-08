@@ -6,7 +6,7 @@ This is the backend API for Pixel Phantoms, built with Express.js.
 ## Setup
 
 ### Prerequisites
-- Node.js (v14 or higher)
+- Node.js (v18 or higher)
 - npm or yarn
 
 ### Installation
@@ -25,7 +25,14 @@ npm install
 ```bash
 PORT=5000
 NODE_ENV=development
+CORS_ORIGINS=http://localhost:3000,http://localhost:5500,http://127.0.0.1:5500
 ```
+
+### Environment Variables
+
+- `PORT`: Server port (default: 5000)
+- `NODE_ENV`: Environment mode (`development` or `production`)
+- `CORS_ORIGINS`: Comma-separated list of allowed CORS origins
 
 ### Running the Server
 
